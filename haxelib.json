@@ -1,0 +1,13 @@
+{
+  "name": "materialhx",
+  "url" : "https://github.com/chfoo/materialhx/",
+  "license": "Apache",
+  "tags": ["extern", "js"],
+  "description": "Extern interface, element builder, and wrapper library for Material Design Components (Web).",
+  "version": "0.35000.0",
+  "classPath": "src/",
+  "releasenote": "Initial release.",
+  "contributors": ["chfoo"],
+  "dependencies": {
+  }
+}

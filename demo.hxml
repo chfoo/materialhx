@@ -1,0 +1,5 @@
+-cp src/
+-cp test/
+-js demo.js
+-debug
+-main materialhx.Demo
