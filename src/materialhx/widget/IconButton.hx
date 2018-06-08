@@ -20,6 +20,8 @@ class IconButton extends Widget implements IDisposable {
         _element.appendChild(icon.element);
 
         if (onConfig != null && offConfig != null) {
+            IconButtonBuilder.upgradeToToggle(
+                element, icon.element.tagName, onConfig, offConfig);
             component = new MDCIconButtonToggle(_element);
         } else {
             var ripple = new MDCRipple(element);

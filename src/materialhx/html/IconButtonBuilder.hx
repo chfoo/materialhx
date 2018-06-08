@@ -19,8 +19,9 @@ class IconButtonBuilder {
     }
 
     public static function upgradeToToggle(
-            element:Element, onConfig:IconButtonConfig,
+            element:Element, iconSelector:String, onConfig:IconButtonConfig,
             offConfig:IconButtonConfig) {
+        element.setAttribute("data-icon-inner-selector", iconSelector);
         element.setAttribute("data-toggle-on-label", onConfig.label);
         element.setAttribute("data-toggle-off-label", offConfig.label);
 
