@@ -10,6 +10,7 @@ abstract MDCIconToggleEvent(String) to String {
 
 
 @:native("mdc.iconToggle.MDCIconToggle")
+@:deprecated
 extern class MDCIconToggle extends MDCComponent {
     var label:String;
     var content:String;

@@ -4,6 +4,7 @@ import materialhx.html.IconToggleBuilder;
 import materialhx.mdc.icontoggle.MDCIconToggle;
 
 
+@:deprecated
 class IconToggle extends Widget implements IDisposable {
     public var component(default, null):MDCIconToggle;
 
