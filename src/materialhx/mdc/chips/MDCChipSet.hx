@@ -1,5 +1,6 @@
 package materialhx.mdc.chips;
 
+import js.html.Element;
 import materialhx.mdc.base.MDCComponent;
 
 
@@ -7,8 +8,7 @@ import materialhx.mdc.base.MDCComponent;
 extern class MDCChipSet extends MDCComponent {
     var chips:Array<MDCChip>;
 
-    function addChip(text:String, leadingIcon:js.html.Element,
-        trailingIcon:js.html.Element):Void;
+    function addChip(chipEl: Element):Void;
 
     static function attachTo(root:js.html.Element):MDCChipSet;
 }

@@ -22,6 +22,7 @@ import materialhx.widget.Drawer;
 import materialhx.widget.FAB;
 import materialhx.widget.FormField;
 import materialhx.widget.Icon;
+import materialhx.widget.IconButton;
 import materialhx.widget.IconToggle;
 import materialhx.widget.ImageList;
 import materialhx.widget.ImageListItem;
@@ -115,6 +116,7 @@ class Demo {
         addButton();
         addFAB();
         addIconToggle();
+        addIconButton();
 
         addCard();
         addChips();
@@ -191,6 +193,22 @@ class Demo {
         );
 
         addLabeledWidget("Icon toggle", iconToggle);
+    }
+
+    function addIconButton() {
+        var iconButton = new IconButton(
+            new Icon("bug_report")
+        );
+
+        addLabeledWidget("Icon button", iconButton);
+
+        var iconButtonToggle = new IconButton(
+            new Icon("favorite_border"),
+            { label: "Remove from favorites", content: "favorite" },
+            { label: "Add to favorites", content: "favorite_border" }
+        );
+
+        addLabeledWidget("Icon button toggle", iconButtonToggle);
     }
 
     function addCard() {

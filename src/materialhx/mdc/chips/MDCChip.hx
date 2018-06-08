@@ -10,7 +10,6 @@ extern class MDCChip extends MDCComponent {
     var ripple(default, null):MDCRipple;
 
     function isSelected():Bool;
-    function remove():Void;
 
     static function attachTo(root:js.html.Element):MDCChip;
 }
